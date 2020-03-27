@@ -1,6 +1,7 @@
 # Hivelocity React code challenge
 
 - [Hivelocity React code challenge](#hivelocity-react-code-challenge)
+  - [Challenge](#challenge)
   - [My Notes](#my-notes)
     - [Initial Thoughts](#initial-thoughts)
       - [swagger-client](#swagger-client)
@@ -9,8 +10,14 @@
     - [Speedbumps](#speedbumps)
     - [After Thoughts](#after-thoughts)
     - [Delighters](#delighters)
-  - [Getting Started](#getting-started)
-  - [Challenge](#challenge)
+
+## Challenge
+
+The challenge is to request a list of devices from our API endpoint https://core.hivelocity.net/api/v2/device/ then render each individual device's data into components that look like this:
+
+<img src="example.png"/>
+
+To see example data [interactive api docs are located here.](https://api-docs.hivelocity.net/openapi)
 
 ## My Notes
 
@@ -48,27 +55,3 @@ I debated about adding tests given that the guidance on the challenge was to spe
 
 - I swapped the default React favicon with Hivelocity's favicon and set an appropriate document title.
 - The loading indicator will change when the request is taking longer than expected.
-
-## Getting Started
-
-In the project directory, run:
-
-1. `npm install`
-2. `npm start`
-
-The second command runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-
-You should get a blank page with the words _Hello from Hivelocity_ in the upper left corner.
-
-If you are having trouble setting up the project, please email your hiring manager
-
-## Challenge
-
-The challenge is to request a list of devices from our API endpoint https://core.hivelocity.net/api/v2/device/ then render each individual device's data into components that look like this:
-
-<img src="example.png"/>
-
-To see example data [interactive api docs are located here.](https://api-docs.hivelocity.net/openapi)
