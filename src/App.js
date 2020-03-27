@@ -31,23 +31,19 @@ function App() {
 
   useEffect(() => {
     let ignoreResponse = false;
-    function fetchDevices() {
-      deviceService
-        .getDevices()
-        .then(data => {
-          if (!ignoreResponse) {
-            setDevices(data.sort((a, b) => a.deviceId - b.deviceId));
-            setState(states.IDLE);
-          }
-        })
-        .catch(() => {
-          if (!ignoreResponse) {
-            setState(states.FAILED);
-          }
-        });
-    }
-
-    fetchDevices();
+    deviceService
+      .getDevices()
+      .then(data => {
+        if (!ignoreResponse) {
+          setDevices(data.sort((a, b) => a.deviceId - b.deviceId));
+          setState(states.IDLE);
+        }
+      })
+      .catch(() => {
+        if (!ignoreResponse) {
+          setState(states.FAILED);
+        }
+      });
 
     return () => {
       ignoreResponse = true;
